@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header,
+section[role="main"],
+footer {
+  flex: 0 0 auto;
+}
+
+header {
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+}
+
+nav {
+  flex: 1 1 auto;
+}
+
+.main-nav {
+  max-width: 800px;
+  list-style-type: none;
+  margin-left: auto;
+  padding-right: 1rem;
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+
+  &__item {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem 0;
+}
